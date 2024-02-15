@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Traveler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <img class="logo" src="./images/logo.png" alt="" />
+      </div>
+      <div class="profile">
+        <div class="cart-icon-container">
+          <img id="menu-cart" src="./images/cart.png" alt="" />
+          <h2 id="cart-count">0</h2>
+        </div>
+        <li>Home</li>
+        <li>Setting</li>
+        <img class="profile-logo" src="./images/man.png" alt="" />
+      </div>
+    </nav>
+    <main>
+      <!-- banner section -->
+      <section class="banner-container">
+        <div class="banner-left">
+          <h1 class="title">Lets Travel</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            expedita quae eum temporibus tenetur porro commodi doloribus omnis
+            explicabo vero?
+          </p>
+          <h1>Total Budget: <span id="budget">900</span> $</h1>
+        </div>
+        <div class="banner-right">
+          <img class="banner-img" src="./images/banner.png" alt="" />
+        </div>
+      </section>
+
+      <!-- main content area -->
+      <div class="category"></div>
+      <section class="content-area-cotainer">
+        <div class="left-content">
+          <div class="palce">
+            <img class="place-img" src="./images/shajek.jpg" alt="" />
+            <div>
+              <h2>Shajek</h2>
+              <h4>Cost: <span class="price">300</span> $</h4>
+              <button class="add-btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="palce">
+            <img class="place-img" src="./images/Dhaka.jpg" alt="" />
+            <div>
+              <h2>Dhaka</h2>
+              <h4>Cost: <span class="price">300</span> $</h4>
+              <button class="add-btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="palce">
+            <img class="place-img" src="./images/shundar-ban.jpg" alt="" />
+            <div>
+              <h2>Khulna</h2>
+              <h4>Cost: <span class="price">500</span> $</h4>
+              <button class="add-btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="palce">
+            <img class="place-img" src="./images/coxBazar.jpg" alt="" />
+            <div>
+              <h2>Cox Bazar</h2>
+              <h4>Cost: <span class="price">500</span> $</h4>
+              <button class="add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div id="cart-container" class="cart">
+          <h1>Cart</h1>
+          <hr />
+          <ul
+            id="selected-place-container"
+            class="selected-place-container"
+          ></ul>
+          <hr />
+          <div class="calculation-area">
+            <h4>Total cost: <span id="total-cost">0</span> $</h4>
+          </div>
+          <div class="all-cat-btn">
+            <button onclick="grandTotal('bus')" class="category-btn">
+              Bus +100
+            </button>
+            <button onclick="grandTotal('train')" class="category-btn">
+              Train -200
+            </button>
+            <button onclick="grandTotal('flight')" class="category-btn">
+              Flight +500
+            </button>
+          </div>
+          <hr />
+          <h4>Grand Total : <span id="grand-total">0</span> $</h4>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- script file  -->
+    <script src="./app.js"></script>
+  </body>
+</html>

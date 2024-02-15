@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.banner-img{
+    width: 100%;
+}
+.banner-container{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 30px;
+}
+.banner-left{
+    width:50%;
+   /* text-align: center; */
+}
+.banner-right{
+    width:50%;
+    text-align: right;
+}
+.title{
+    font-size: 60px;
+   margin-bottom: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(205, 205, 205);
+}
+.logo{
+    width: 100px;
+}
+.profile{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+.profile-logo{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius:50px;
+    padding: 10px;
+}
+.content-area-cotainer{
+    margin-top: 30px;
+    /* border: 1px solid rgb(247, 18, 18); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.left-content{
+    /* border: 1px solid gray; */
+    width: 1000px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-container{
+    /* border: 1px solid rgb(88, 25, 235); */
+    width:400px;
+}
+.place-img{
+    width: 150px;
+    border-radius: 10px;
+}
+.palce{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    width: 270px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius:5px;
+}
+.add-btn{
+    width: 90px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(109, 109, 109);
+    border-radius: 5px;
+    font-size: 14px;
+    color:white;
+    margin-top: 15px;
+}
+.cart{
+    width: 100%;
+    box-shadow: 8px 8px 16px gray;
+    position: sticky;
+    text-align: center;
+    padding:10px;
+}
+.cart-icon-container{
+    position: absolute;
+
+}
+#menu-cart{
+    border: none !important;
+    width: 30px;
+    box-shadow: none;
+    position: absolute;
+   right: 23px;
+  bottom: 1.5px;
+}
+#cart-count{
+    position: relative;
+   right: 44px;
+  z-index: 1;
+  bottom: 15px;
+color: rgb(235, 17, 17);
+}
+.category-btn{
+    padding: 8px;
+border: none;
+background-color: rgb(135, 134, 133);
+color: white;
+font-size:15px;
+}
+.all-cat-btn{
+    padding: 10px;
+}
+li{
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    list-style: numeric;
+    
+}
+.selected-place-container{
+    width:200px;
+    margin: auto;
+    
+}
